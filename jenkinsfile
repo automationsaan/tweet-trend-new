@@ -6,7 +6,7 @@ pipeline {
     }
     environment {
         PATH = "/opt/apache-maven-3.9.4/bin:$PATH"
-        MAVEN_OPTS = "-Xmx4096m -XX:MaxPermSize=1024m"
+        MAVEN_OPTS = "-Xmx4096m"
     }
     stages {
         stage('Clone-code') {
