@@ -6,13 +6,15 @@ pipeline {
     }
     environment {
         PATH = "/opt/apache-maven-3.9.4/bin:$PATH"
+        MAVEN_OPTS = "-Xmx4096m -XX:MaxPermSize=1024m"
     }
     stages {
-        stage("build") {
+        stage('Build') {
             steps {
                 sh 'mvn clean deploy -X'
             }
         }
     }
 }
+
 
