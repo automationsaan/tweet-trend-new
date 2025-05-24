@@ -5,7 +5,7 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>3.2.0.RELEASE</version> <!-- updated version from 2.2.0 to 3.2.0 to fix error-->
+		<version>3.2.0</version> <!-- updated version from 2.2.0 to 3.2.0 to fix error-->
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.valaxy</groupId>
