@@ -4,30 +4,13 @@ pipeline {
             label 'maven'
         }
     }
-    environment {
-        PATH = "/opt/apache-maven-3.9.9/bin:$PATH"
-    }
     stages {
         stage('Build') {
             steps {
                 echo "----------- build started ----------"
-                sh 'java -version'
-                sh 'mvn -version'
-                // sh 'mvn clean package'
+                sh 'mvn clean package'
                 echo "----------- build completed ----------"
             }
         }
     }
 }
-
-  // stages {
-  //   stage('Build') {
-  //     steps {
-  //       script {
-  //         echo "----------- build started ----------"
-  //         sh 'mvn clean package'
-  //         echo "----------- build completed ----------"
-  //       }
-  //     }
-  //   }
-  // }
